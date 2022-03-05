@@ -1,0 +1,136 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e2b4b4;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+.calculator {
+  width: 40vw;
+  height: 70vh;
+  background-color: #8b8bdc;
+  margin: 10px;
+  border-radius: 10px;
+  border: black 5px solid;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  height: 15vh;
+  background-color: #83a1a1;
+}
+
+.numpad {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.numpad-row {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.numpad-row-item {
+  flex-grow: 1;
+  background-color: darkgray;
+  border: black 1px dashed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  flex-basis: 0;
+}
+
+.numpad-row-item:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.user-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-list {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+
+.user-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form-input {
+
+  /*размер текста*/
+  font-size: 30px;
+  /*отступ от остальных элементов*/
+  margin: 10px;
+  /*цвет рамки-размер-стиль*/
+  border: darkgreen 8px solid;
+  border-radius: 12px;
+  background-color: #3e9a7c;
+  color: #88da88;
+  /* расстояние от границы до текста*/
+  padding: 10px;
+}
+
+.user-form-input::placeholder {
+  /*цвет текста в пустом поле*/
+  color: #88da88;
+}
+
+.user-form-register-button {
+  border-radius: 12px;
+  height: 70px;
+  color: #88da88;
+  font-size: 30px;
+  background-color: darkgreen;
+  margin: 10px;
+  /*убрали дефотную границу*/
+  border: none;
+  /*все буквы большие в тексте*/
+  text-transform: uppercase;
+}
+/*цвет элемента изменяется при наведении на кнопку*/
+.user-form-register-button:hover {
+  background-color: #3e9a7c;
+
+}
+
+.user {
+  border: darkgreen 8px solid;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  font-size: 30px;
+  background-color: #80b2a0;
+}
